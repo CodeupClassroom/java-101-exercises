@@ -31,6 +31,22 @@ public class Java101Exercises {
     }
 
     /**
+     * Exercise 002 - Find Two Addends
+     * Given a primative array of integers a number n, return whether any two numbers from the array add up to equal n.
+     * For example, given [7, 15, 3, 6, 8] and n equal to 13, return true since 7 + 6 is 13.
+     *
+     * LEVEL: BASIC
+     *
+     * @param nums
+     * @param n
+     * @return
+     */
+    public static boolean exercise002(int[] nums, int n) {
+        // TODO: Write code here
+        return false;
+    }
+
+    /**
      * Exercise 011 - Implement Operator
      * Write a method with 3 parameters; a String and 2 doubles. The string will be an operation that the operation
      * needs to process on the two operands. Return the result if the operation. Return 0.0 if the operation is not
