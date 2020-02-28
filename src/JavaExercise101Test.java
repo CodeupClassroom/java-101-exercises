@@ -9,8 +9,23 @@ public class JavaExercise101Test {
 
     @Test
     public void exercise001Test() {
-        assertEquals(7, JavaExercises101.exercise001(3, 4));
-        assertEquals(-5, JavaExercises101.exercise001(-8, 3));
+        assertEquals("exercise001Test failed test 01.", 7, JavaExercises101.exercise001(3, 4));
+        assertEquals("exercise001Test failed test 02.", -5, JavaExercises101.exercise001(-8, 3));
+    }
+
+    @Test
+    public void exercise011Test() {
+        assertEquals("exercise011Test failed test 01.",7.0, JavaExercises101.exercise011("ADD",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 02.",-1.0, JavaExercises101.exercise011("SUB",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 03.",12.0, JavaExercises101.exercise011("MUL",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 04.",0.75, JavaExercises101.exercise011("DIV",3, 4), 0.00001);
+
+        assertEquals("exercise011Test failed test 05.",-5.0, JavaExercises101.exercise011("ADD",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 06.",-11.0, JavaExercises101.exercise011("SUB",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 07.",-24.0, JavaExercises101.exercise011("MUL",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 08.",-2.666666, JavaExercises101.exercise011("DIV",-8, 3), 0.00001);
+
+        assertEquals("exercise011Test failed test 09.",0.0, JavaExercises101.exercise011("MIN",-8, 3), 0.00001);
     }
 
     @Test
