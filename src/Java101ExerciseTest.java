@@ -5,27 +5,27 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class JavaExercise101Test {
+public class Java101ExerciseTest {
 
     @Test
     public void exercise001Test() {
-        assertEquals("exercise001Test failed test 01.", 7, JavaExercises101.exercise001(3, 4));
-        assertEquals("exercise001Test failed test 02.", -5, JavaExercises101.exercise001(-8, 3));
+        assertEquals("exercise001Test failed test 01.", 7, Java101Exercises.exercise001(3, 4));
+        assertEquals("exercise001Test failed test 02.", -5, Java101Exercises.exercise001(-8, 3));
     }
 
     @Test
     public void exercise011Test() {
-        assertEquals("exercise011Test failed test 01.",7.0, JavaExercises101.exercise011("ADD",3, 4), 0.00001);
-        assertEquals("exercise011Test failed test 02.",-1.0, JavaExercises101.exercise011("SUB",3, 4), 0.00001);
-        assertEquals("exercise011Test failed test 03.",12.0, JavaExercises101.exercise011("MUL",3, 4), 0.00001);
-        assertEquals("exercise011Test failed test 04.",0.75, JavaExercises101.exercise011("DIV",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.exercise011("ADD",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.exercise011("SUB",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 03.",12.0, Java101Exercises.exercise011("MUL",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 04.",0.75, Java101Exercises.exercise011("DIV",3, 4), 0.00001);
 
-        assertEquals("exercise011Test failed test 05.",-5.0, JavaExercises101.exercise011("ADD",-8, 3), 0.00001);
-        assertEquals("exercise011Test failed test 06.",-11.0, JavaExercises101.exercise011("SUB",-8, 3), 0.00001);
-        assertEquals("exercise011Test failed test 07.",-24.0, JavaExercises101.exercise011("MUL",-8, 3), 0.00001);
-        assertEquals("exercise011Test failed test 08.",-2.666666, JavaExercises101.exercise011("DIV",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 05.",-5.0, Java101Exercises.exercise011("ADD",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 06.",-11.0, Java101Exercises.exercise011("SUB",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 07.",-24.0, Java101Exercises.exercise011("MUL",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 08.",-2.666666, Java101Exercises.exercise011("DIV",-8, 3), 0.00001);
 
-        assertEquals("exercise011Test failed test 09.",0.0, JavaExercises101.exercise011("MIN",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 09.",0.0, Java101Exercises.exercise011("MIN",-8, 3), 0.00001);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class JavaExercise101Test {
 
         List<Integer> results;
         try {
-            results = JavaExercises101.exercise041(input);
+            results = Java101Exercises.exercise041(input);
             assertTrue("exercise041Test failed test 01.", expected.equals(results));
         } catch (Exception e) {
             fail("exercise041Test threw an unexpected exception on test 01");
@@ -67,7 +67,7 @@ public class JavaExercise101Test {
         expected.add(504);
 
         try {
-            results = JavaExercises101.exercise041(input);
+            results = Java101Exercises.exercise041(input);
             assertTrue("exercise041Test failed test 02.", expected.equals(results));
         } catch (Exception e) {
             fail("exercise041Test threw an unexpected exception on test 02");
@@ -75,14 +75,14 @@ public class JavaExercise101Test {
 
         try {
             input.clear();
-            results = JavaExercises101.exercise041(input);
+            results = Java101Exercises.exercise041(input);
             fail("exercise041Test did not throw an expected exception on test 03");
         } catch (Exception e) {
             // Past test, no action required
         }
 
         try {
-            results = JavaExercises101.exercise041(null);
+            results = Java101Exercises.exercise041(null);
             fail("exercise041Test did not throw an expected exception on test 04");
         } catch (Exception e) {
             // Past test, no action required

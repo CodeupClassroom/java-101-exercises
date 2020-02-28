@@ -13,7 +13,7 @@ import java.util.List;
  *
  */
 
-public class JavaExercises101 {
+public class Java101Exercises {
 
     /**
      * Exercise 001 - Add Ints
