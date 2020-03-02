@@ -88,4 +88,83 @@ public class Java101ExerciseTest {
             // Past test, no action required
         }
     }
+
+    @Test
+    public void exercise061Test() {
+        ArrayList<Integer> testList;
+
+        // test 1
+        testList = Java101Exercises.exercise061(1);
+        assert(testList != null);
+        assertEquals(1, (long)testList.size());
+        assertEquals(1, (long)testList.get(0));
+
+        // test 2
+        testList = Java101Exercises.exercise061(2);
+        assert(testList != null);
+        assertEquals(2, (long)testList.size());
+        assertEquals(1, (long)testList.get(0));
+        assertEquals(2, (long)testList.get(1));
+
+        // test 3
+        testList = Java101Exercises.exercise061(3);
+        assert(testList != null);
+        assertEquals(2, (long)testList.size());
+        assertEquals(1, (long)testList.get(0));
+        assertEquals(3, (long)testList.get(1));
+
+        // test -3
+        testList = Java101Exercises.exercise061(-3);
+        assert(testList != null);
+        assertEquals(4, (long)testList.size());
+        assertEquals(-3, (long)testList.get(0));
+        assertEquals(-1, (long)testList.get(1));
+        assertEquals(1, (long)testList.get(2));
+        assertEquals(3, (long)testList.get(3));
+
+        // test 9
+        testList = Java101Exercises.exercise061(9);
+        assert(testList != null);
+        assertEquals(3, (long)testList.size(), 3);
+        assertEquals(1, (long)testList.get(0), 1);
+        assertEquals(3, (long)testList.get(1), 3);
+        assertEquals(9, (long)testList.get(2), 9);
+
+        // test 8
+        testList = Java101Exercises.exercise061(8);
+        assert(testList != null);
+        assertEquals(4, (long)testList.size());
+        assertEquals(1, (long)testList.get(0));
+        assertEquals(2, (long)testList.get(1));
+        assertEquals(4, (long)testList.get(2));
+        assertEquals(8, (long)testList.get(3));
+
+        // test 125
+        testList = Java101Exercises.exercise061(125);
+        assert(testList != null);
+        assertEquals(4, (long)testList.size());
+        assertEquals(1, (long)testList.get(0));
+        assertEquals(5, (long)testList.get(1));
+        assertEquals(25, (long)testList.get(2));
+        assertEquals(125, (long)testList.get(3));
+
+        // test -125
+        testList = Java101Exercises.exercise061(-125);
+        assert(testList != null);
+        assertEquals(8, (long)testList.size());
+        assertEquals(-125, (long)testList.get(0));
+        assertEquals(-5, (long)testList.get(2));
+        assertEquals(5, (long)testList.get(5));
+        assertEquals(125, (long)testList.get(7));
+
+        // test 2080046
+        testList = Java101Exercises.exercise061(2080046);
+        assert(testList != null);
+        // [1, 2, 359, 718, 2897, 5794, 1040023, 2080046]
+        assertEquals(8, (long)testList.size());
+        assertEquals(1, (long)testList.get(0));
+        assertEquals(359, (long)testList.get(2));
+        assertEquals(5794, (long)testList.get(5));
+        assertEquals(2080046, (long)testList.get(7));
+    }
 }

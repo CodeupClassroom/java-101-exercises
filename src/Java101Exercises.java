@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -80,6 +81,19 @@ public class Java101Exercises {
      */
     public static List<Integer> exercise041(List<Integer> iList) throws Exception {
         // TODO: Write code here
+        return null;
+    }
+
+    /**
+     * Find all of the factors for a given integer (int). The integer could be negative.
+     *
+     * Find Factors Solution
+     * LEVEL: DIFFICULT
+     *
+     * @param num       The number to be factored
+     * @return          An Integer ArrayList of factors of num.
+     */
+    public static ArrayList<Integer> exercise061(int num) {
         return null;
     }
 }
