@@ -33,7 +33,7 @@ public class Java101Exercises {
 
     /**
      * Exercise 002 - Find Two Addends
-     * Given a primative array of integers a number n, return whether any two numbers from the array add up to equal n.
+     * Given a primitive array of integers a number n, return whether any two numbers from the array add up to equal n.
      * For example, given [7, 15, 3, 6, 8] and n equal to 13, return true since 7 + 6 is 13.
      *
      * LEVEL: BASIC
@@ -85,9 +85,9 @@ public class Java101Exercises {
     }
 
     /**
+     * Exercise 061 - Find Factors
      * Find all of the factors for a given integer (int). The integer could be negative.
      *
-     * Find Factors Solution
      * LEVEL: DIFFICULT
      *
      * @param num       The number to be factored
