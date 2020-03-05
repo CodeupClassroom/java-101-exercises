@@ -75,7 +75,24 @@ public class Java101Exercises {
      * @return          An Integer ArrayList of factors of num.
      */
     public static ArrayList<Integer> exercise012(int num) {
+        // TODO: Write code here
         return  null;
+    }
+
+    /**
+     * Exercise 013 - Real Integer sum Addends
+     * Given a two double parameters, return the nearest integer sum. If a number is half-way between to integers,
+     * round up for positive sums and down for negative sums.
+     *
+     * LEVEL: EASY
+     *
+     * @param p1    First real number
+     * @param p2    Second real number
+     * @return      Integer sum
+     */
+    public static int exercise013(double p1, double p2 ) {
+        // TODO: Write code here
+        return 0;
     }
 
     /**
@@ -110,6 +127,7 @@ public class Java101Exercises {
      * @return          An Integer ArrayList of factors of num.
      */
     public static ArrayList<Integer> exercise071(int num) {
+        // TODO: Write code here
         return  null;
     }
 }

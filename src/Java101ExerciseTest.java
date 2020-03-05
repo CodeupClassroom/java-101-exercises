@@ -111,6 +111,27 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise013Test() {
+        double p1 = 0.4;
+        double p2 = 0.3;
+        assertEquals("exercise003 Test failed test 01.", 1, Java101Exercises.exercise013(p1, p2));
+        assertEquals("exercise003 Test failed test 02.", 0, Java101Exercises.exercise013(p1, -p2));
+        assertEquals("exercise003 Test failed test 03.", -1, Java101Exercises.exercise013(-p1, -p2));
+
+        p1 = -3.2;
+        p2 = -2.3;
+        assertEquals("exercise003 Test failed test 04.", -6, Java101Exercises.exercise013(p1, p2));
+        assertEquals("exercise003 Test failed test 05.", -1, Java101Exercises.exercise013(p1, -p2));
+        assertEquals("exercise003 Test failed test 06.", 6, Java101Exercises.exercise013(-p1, -p2));
+
+        p1 = 13.8;
+        p2 = -17.3;
+        assertEquals("exercise003 Test failed test 07.", -4, Java101Exercises.exercise013(p1, p2));
+        assertEquals("exercise003 Test failed test 08.", 31, Java101Exercises.exercise013(p1, -p2));
+        assertEquals("exercise003 Test failed test 09.", 4, Java101Exercises.exercise013(-p1, -p2));
+    }
+
+    @Test
     public void exercise041Test() {
         ArrayList<Integer> input = new ArrayList();
         input.add(1);
