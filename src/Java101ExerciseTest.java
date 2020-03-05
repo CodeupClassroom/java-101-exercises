@@ -1,4 +1,3 @@
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -173,30 +172,30 @@ public class Java101ExerciseTest {
     }
 
     @Test
-    public void exercise061Test() {
+    public void exercise071Test() {
 
         // test 1
-        testList = Java101Exercises.exercise061(1);
+        testList = Java101Exercises.exercise071(1);
         assert(testList != null);
         assertEquals(1, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
 
         // test 2
-        testList = Java101Exercises.exercise061(2);
+        testList = Java101Exercises.exercise071(2);
         assert(testList != null);
         assertEquals(2, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
         assertEquals(2, (long)testList.get(1));
 
         // test 3
-        testList = Java101Exercises.exercise061(3);
+        testList = Java101Exercises.exercise071(3);
         assert(testList != null);
         assertEquals(2, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
         assertEquals(3, (long)testList.get(1));
 
         // test -3
-        testList = Java101Exercises.exercise061(-3);
+        testList = Java101Exercises.exercise071(-3);
         assert(testList != null);
         assertEquals(4, (long)testList.size());
         assertEquals(-3, (long)testList.get(0));
@@ -205,7 +204,7 @@ public class Java101ExerciseTest {
         assertEquals(3, (long)testList.get(3));
 
         // test 9
-        testList = Java101Exercises.exercise061(9);
+        testList = Java101Exercises.exercise071(9);
         assert(testList != null);
         assertEquals(3, (long)testList.size(), 3);
         assertEquals(1, (long)testList.get(0), 1);
@@ -213,7 +212,7 @@ public class Java101ExerciseTest {
         assertEquals(9, (long)testList.get(2), 9);
 
         // test 8
-        testList = Java101Exercises.exercise061(8);
+        testList = Java101Exercises.exercise071(8);
         assert(testList != null);
         assertEquals(4, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
@@ -222,7 +221,7 @@ public class Java101ExerciseTest {
         assertEquals(8, (long)testList.get(3));
 
         // test 125
-        testList = Java101Exercises.exercise061(125);
+        testList = Java101Exercises.exercise071(125);
         assert(testList != null);
         assertEquals(4, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
@@ -231,7 +230,7 @@ public class Java101ExerciseTest {
         assertEquals(125, (long)testList.get(3));
 
         // test -125
-        testList = Java101Exercises.exercise061(-125);
+        testList = Java101Exercises.exercise071(-125);
         assert(testList != null);
         assertEquals(8, (long)testList.size());
         assertEquals(-125, (long)testList.get(0));
@@ -242,7 +241,7 @@ public class Java101ExerciseTest {
         // test 2080046
         // also test time
         long startTime = System.nanoTime();
-        testList = Java101Exercises.exercise061(2080046);
+        testList = Java101Exercises.exercise071(2080046);
         assert(testList != null);
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);

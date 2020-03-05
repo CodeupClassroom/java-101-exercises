@@ -6,11 +6,11 @@ import java.util.List;
  * interview questions. There are five levels of problems. As you improve you can move up levels.
  *
  * LEVELS:
- *          BASIC
- *          EASY
- *          INTERMEDIATE
- *          DIFFICULT
- *          ADVANCED
+ *          BASIC               Exercise 001 - 010
+ *          EASY                Exercise 011 - 040
+ *          INTERMEDIATE        Exercise 041 - 070
+ *          DIFFICULT           Exercise 071 - 090
+ *          ADVANCED            Exercise 091 - 101
  *
  */
 
@@ -98,7 +98,7 @@ public class Java101Exercises {
     }
 
     /**
-     * Exercise 061 - Find Factors Efficiently
+     * Exercise 071 - Find Factors Efficiently
      * Find all of the factors for a given integer (int). The integer could be negative. The result needs to be sorted
      * in ascending order.
      *
@@ -109,7 +109,7 @@ public class Java101Exercises {
      * @param num       The number to be factored
      * @return          An Integer ArrayList of factors of num.
      */
-    public static ArrayList<Integer> exercise061(int num) {
+    public static ArrayList<Integer> exercise071(int num) {
         return  null;
     }
 }
