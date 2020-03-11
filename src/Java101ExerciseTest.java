@@ -4,77 +4,78 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class Java101ExerciseTest {
     private ArrayList<Integer> testList;
 
     @Test
     public void exercise001Test() {
-        assertEquals("exercise001Test failed test 01.", 7, Java101Exercises.exercise001(3, 4));
-        assertEquals("exercise001Test failed test 02.", -5, Java101Exercises.exercise001(-8, 3));
+        assertEquals("Java101Exercises.addInts001(3, 4) failed", 7, Java101Exercises.addInts001(3, 4));
+        assertEquals("Java101Exercises.addInts001(-8, 3) failed", -5, Java101Exercises.addInts001(-8, 3));
     }
 
     @Test
     public void exercise002Test() {
         int[] nums = {7, 15, 3, 6, 8};
-        assertEquals("exercise002Test failed test 01.", true, Java101Exercises.exercise002(nums, 13));
-        assertEquals("exercise002Test failed test 02.", false, Java101Exercises.exercise002(nums, 25));
+        assertEquals("exercise002Test failed test 01.", true, Java101Exercises.findTwoAddends002(nums, 13));
+        assertEquals("exercise002Test failed test 02.", false, Java101Exercises.findTwoAddends002(nums, 25));
 
         nums = new int[]{-3, 14, -7, 5, 19};
-        assertEquals("exercise002Test failed test 03.", true, Java101Exercises.exercise002(nums, -2));
-        assertEquals("exercise002Test failed test 04.", false, Java101Exercises.exercise002(nums, 13));
+        assertEquals("exercise002Test failed test 03.", true, Java101Exercises.findTwoAddends002(nums, -2));
+        assertEquals("exercise002Test failed test 04.", false, Java101Exercises.findTwoAddends002(nums, 13));
 
         nums = new int[]{2, 4, 6, 8, -10};
-        assertEquals("exercise002Test failed test 05.", true, Java101Exercises.exercise002(nums, 10));
-        assertEquals("exercise002Test failed test 06.", false, Java101Exercises.exercise002(nums, 11));
+        assertEquals("exercise002Test failed test 05.", true, Java101Exercises.findTwoAddends002(nums, 10));
+        assertEquals("exercise002Test failed test 06.", false, Java101Exercises.findTwoAddends002(nums, 11));
 
         nums = null;
-        assertEquals("exercise002Test failed test 07.", false, Java101Exercises.exercise002(nums, 25));
+        assertEquals("exercise002Test failed test 07.", false, Java101Exercises.findTwoAddends002(nums, 25));
 
         nums = new int[1];
-        assertEquals("exercise002Test failed test 08.", false, Java101Exercises.exercise002(nums, 25));
+        assertEquals("exercise002Test failed test 08.", false, Java101Exercises.findTwoAddends002(nums, 25));
     }
 
     @Test
     public void exercise011Test() {
-        assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.exercise011("ADD",3, 4), 0.00001);
-        assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.exercise011("SUB",3, 4), 0.00001);
-        assertEquals("exercise011Test failed test 03.",12.0, Java101Exercises.exercise011("MUL",3, 4), 0.00001);
-        assertEquals("exercise011Test failed test 04.",0.75, Java101Exercises.exercise011("DIV",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 03.",12.0, Java101Exercises.preformIndicatedOperation011("MUL",3, 4), 0.00001);
+        assertEquals("exercise011Test failed test 04.",0.75, Java101Exercises.preformIndicatedOperation011("DIV",3, 4), 0.00001);
 
-        assertEquals("exercise011Test failed test 05.",-5.0, Java101Exercises.exercise011("ADD",-8, 3), 0.00001);
-        assertEquals("exercise011Test failed test 06.",-11.0, Java101Exercises.exercise011("SUB",-8, 3), 0.00001);
-        assertEquals("exercise011Test failed test 07.",-24.0, Java101Exercises.exercise011("MUL",-8, 3), 0.00001);
-        assertEquals("exercise011Test failed test 08.",-2.666666, Java101Exercises.exercise011("DIV",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 05.",-5.0, Java101Exercises.preformIndicatedOperation011("ADD",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 06.",-11.0, Java101Exercises.preformIndicatedOperation011("SUB",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 07.",-24.0, Java101Exercises.preformIndicatedOperation011("MUL",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 08.",-2.666666, Java101Exercises.preformIndicatedOperation011("DIV",-8, 3), 0.00001);
 
-        assertEquals("exercise011Test failed test 09.",0.0, Java101Exercises.exercise011("MIN",-8, 3), 0.00001);
+        assertEquals("exercise011Test failed test 09.",0.0, Java101Exercises.preformIndicatedOperation011("MIN",-8, 3), 0.00001);
     }
 
     @Test
     public void exercise012Test() {
 
         // test 1
-        testList = Java101Exercises.exercise012(1);
+        testList = Java101Exercises.findFactors012(1);
         assert(testList != null);
         assertEquals(1, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
 
         // test 2
-        testList = Java101Exercises.exercise012(2);
+        testList = Java101Exercises.findFactors012(2);
         assert(testList != null);
         assertEquals(2, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
         assertEquals(2, (long)testList.get(1));
 
         // test 3
-        testList = Java101Exercises.exercise012(3);
+        testList = Java101Exercises.findFactors012(3);
         assert(testList != null);
         assertEquals(2, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
         assertEquals(3, (long)testList.get(1));
 
         // test 9
-        testList = Java101Exercises.exercise012(9);
+        testList = Java101Exercises.findFactors012(9);
         assert(testList != null);
         assertEquals(3, (long)testList.size(), 3);
         assertEquals(1, (long)testList.get(0), 1);
@@ -82,7 +83,7 @@ public class Java101ExerciseTest {
         assertEquals(9, (long)testList.get(2), 9);
 
         // test 8
-        testList = Java101Exercises.exercise012(8);
+        testList = Java101Exercises.findFactors012(8);
         assert(testList != null);
         assertEquals(4, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
@@ -91,7 +92,7 @@ public class Java101ExerciseTest {
         assertEquals(8, (long)testList.get(3));
 
         // test 125
-        testList = Java101Exercises.exercise012(125);
+        testList = Java101Exercises.findFactors012(125);
         assert(testList != null);
         assertEquals(4, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
@@ -100,7 +101,7 @@ public class Java101ExerciseTest {
         assertEquals(125, (long)testList.get(3));
 
         // test 2080046
-        testList = Java101Exercises.exercise012(2080046);
+        testList = Java101Exercises.findFactors012(2080046);
         assert(testList != null);
         // [1, 2, 359, 718, 2897, 5794, 1040023, 2080046]
         assertEquals(8, (long)testList.size());
@@ -114,21 +115,21 @@ public class Java101ExerciseTest {
     public void exercise013Test() {
         double p1 = 0.4;
         double p2 = 0.3;
-        assertEquals("exercise003 Test failed test 01.", 1, Java101Exercises.exercise013(p1, p2));
-        assertEquals("exercise003 Test failed test 02.", 0, Java101Exercises.exercise013(p1, -p2));
-        assertEquals("exercise003 Test failed test 03.", -1, Java101Exercises.exercise013(-p1, -p2));
+        assertEquals("exercise003 Test failed test 01.", 1, Java101Exercises.getNearestIntegerToRealSum013(p1, p2));
+        assertEquals("exercise003 Test failed test 02.", 0, Java101Exercises.getNearestIntegerToRealSum013(p1, -p2));
+        assertEquals("exercise003 Test failed test 03.", -1, Java101Exercises.getNearestIntegerToRealSum013(-p1, -p2));
 
         p1 = -3.2;
         p2 = -2.3;
-        assertEquals("exercise003 Test failed test 04.", -6, Java101Exercises.exercise013(p1, p2));
-        assertEquals("exercise003 Test failed test 05.", -1, Java101Exercises.exercise013(p1, -p2));
-        assertEquals("exercise003 Test failed test 06.", 6, Java101Exercises.exercise013(-p1, -p2));
+        assertEquals("exercise003 Test failed test 04.", -6, Java101Exercises.getNearestIntegerToRealSum013(p1, p2));
+        assertEquals("exercise003 Test failed test 05.", -1, Java101Exercises.getNearestIntegerToRealSum013(p1, -p2));
+        assertEquals("exercise003 Test failed test 06.", 6, Java101Exercises.getNearestIntegerToRealSum013(-p1, -p2));
 
         p1 = 13.8;
         p2 = -17.3;
-        assertEquals("exercise003 Test failed test 07.", -4, Java101Exercises.exercise013(p1, p2));
-        assertEquals("exercise003 Test failed test 08.", 31, Java101Exercises.exercise013(p1, -p2));
-        assertEquals("exercise003 Test failed test 09.", 4, Java101Exercises.exercise013(-p1, -p2));
+        assertEquals("exercise003 Test failed test 07.", -4, Java101Exercises.getNearestIntegerToRealSum013(p1, p2));
+        assertEquals("exercise003 Test failed test 08.", 31, Java101Exercises.getNearestIntegerToRealSum013(p1, -p2));
+        assertEquals("exercise003 Test failed test 09.", 4, Java101Exercises.getNearestIntegerToRealSum013(-p1, -p2));
     }
 
     @Test
@@ -149,7 +150,7 @@ public class Java101ExerciseTest {
 
         List<Integer> results;
         try {
-            results = Java101Exercises.exercise041(input);
+            results = Java101Exercises.multiplyElementsOfList041(input);
             assertTrue("exercise041Test failed test 01.", expected.equals(results));
         } catch (Exception e) {
             fail("exercise041Test threw an unexpected exception on test 01");
@@ -170,7 +171,7 @@ public class Java101ExerciseTest {
         expected.add(504);
 
         try {
-            results = Java101Exercises.exercise041(input);
+            results = Java101Exercises.multiplyElementsOfList041(input);
             assertTrue("exercise041Test failed test 02.", expected.equals(results));
         } catch (Exception e) {
             fail("exercise041Test threw an unexpected exception on test 02");
@@ -178,14 +179,14 @@ public class Java101ExerciseTest {
 
         try {
             input.clear();
-            results = Java101Exercises.exercise041(input);
+            results = Java101Exercises.multiplyElementsOfList041(input);
             fail("exercise041Test did not throw an expected exception on test 03");
         } catch (Exception e) {
             // Past test, no action required
         }
 
         try {
-            results = Java101Exercises.exercise041(null);
+            results = Java101Exercises.multiplyElementsOfList041(null);
             fail("exercise041Test did not throw an expected exception on test 04");
         } catch (Exception e) {
             // Past test, no action required
@@ -196,27 +197,27 @@ public class Java101ExerciseTest {
     public void exercise071Test() {
 
         // test 1
-        testList = Java101Exercises.exercise071(1);
+        testList = Java101Exercises.findFactorsEfficiently071(1);
         assert(testList != null);
         assertEquals(1, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
 
         // test 2
-        testList = Java101Exercises.exercise071(2);
+        testList = Java101Exercises.findFactorsEfficiently071(2);
         assert(testList != null);
         assertEquals(2, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
         assertEquals(2, (long)testList.get(1));
 
         // test 3
-        testList = Java101Exercises.exercise071(3);
+        testList = Java101Exercises.findFactorsEfficiently071(3);
         assert(testList != null);
         assertEquals(2, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
         assertEquals(3, (long)testList.get(1));
 
         // test -3
-        testList = Java101Exercises.exercise071(-3);
+        testList = Java101Exercises.findFactorsEfficiently071(-3);
         assert(testList != null);
         assertEquals(4, (long)testList.size());
         assertEquals(-3, (long)testList.get(0));
@@ -225,7 +226,7 @@ public class Java101ExerciseTest {
         assertEquals(3, (long)testList.get(3));
 
         // test 9
-        testList = Java101Exercises.exercise071(9);
+        testList = Java101Exercises.findFactorsEfficiently071(9);
         assert(testList != null);
         assertEquals(3, (long)testList.size(), 3);
         assertEquals(1, (long)testList.get(0), 1);
@@ -233,7 +234,7 @@ public class Java101ExerciseTest {
         assertEquals(9, (long)testList.get(2), 9);
 
         // test 8
-        testList = Java101Exercises.exercise071(8);
+        testList = Java101Exercises.findFactorsEfficiently071(8);
         assert(testList != null);
         assertEquals(4, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
@@ -242,7 +243,7 @@ public class Java101ExerciseTest {
         assertEquals(8, (long)testList.get(3));
 
         // test 125
-        testList = Java101Exercises.exercise071(125);
+        testList = Java101Exercises.findFactorsEfficiently071(125);
         assert(testList != null);
         assertEquals(4, (long)testList.size());
         assertEquals(1, (long)testList.get(0));
@@ -251,7 +252,7 @@ public class Java101ExerciseTest {
         assertEquals(125, (long)testList.get(3));
 
         // test -125
-        testList = Java101Exercises.exercise071(-125);
+        testList = Java101Exercises.findFactorsEfficiently071(-125);
         assert(testList != null);
         assertEquals(8, (long)testList.size());
         assertEquals(-125, (long)testList.get(0));
@@ -262,7 +263,7 @@ public class Java101ExerciseTest {
         // test 2080046
         // also test time
         long startTime = System.nanoTime();
-        testList = Java101Exercises.exercise071(2080046);
+        testList = Java101Exercises.findFactorsEfficiently071(2080046);
         assert(testList != null);
         long endTime = System.nanoTime();
         long duration = (endTime - startTime);
@@ -274,5 +275,26 @@ public class Java101ExerciseTest {
         assertEquals(359, (long)testList.get(2));
         assertEquals(5794, (long)testList.get(5));
         assertEquals(2080046, (long)testList.get(7));
+    }
+
+    @Test
+    public void convertRomanNumeral072Test() {
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"I\") Failed", 1, Java101Exercises.convertRomanNumeral072("I"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"MCMXXLIV\") Failed", 1976, Java101Exercises.convertRomanNumeral072("MCMLXXVI"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"MDCCXII\") Failed", 1492, Java101Exercises.convertRomanNumeral072("MCDXCII"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"CC\") Failed", 200, Java101Exercises.convertRomanNumeral072("CC"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"MCCCDXXXIV\") Failed", 1836, Java101Exercises.convertRomanNumeral072("MDCCCXXXVI"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"MMCCXXII\") Failed", 2222, Java101Exercises.convertRomanNumeral072("MMCCXXII"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"MMI\") Failed", 2001, Java101Exercises.convertRomanNumeral072("MMI"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"MCM\") Failed", 1900, Java101Exercises.convertRomanNumeral072("MCM"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"CD\") Failed", 400, Java101Exercises.convertRomanNumeral072("CD"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"DC\") Failed", 600, Java101Exercises.convertRomanNumeral072("DC"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"CXC\") Failed", 190, Java101Exercises.convertRomanNumeral072("CXC"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"XL\") Failed", 40, Java101Exercises.convertRomanNumeral072("XL"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"LX\") Failed", 60, Java101Exercises.convertRomanNumeral072("LX"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"IX\") Failed", 9, Java101Exercises.convertRomanNumeral072("IX"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"XI\") Failed", 11, Java101Exercises.convertRomanNumeral072("XI"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"IV\") Failed", 4, Java101Exercises.convertRomanNumeral072("IV"));
+        assertEquals("Java101Exercises.convertRomanNumeral072(\"VI\") Failed", 6, Java101Exercises.convertRomanNumeral072("VI"));
     }
 }
