@@ -86,13 +86,38 @@ public class Java101Exercises {
      *
      * LEVEL: EASY
      *
-     * @param p1    First real number
-     * @param p2    Second real number
+     * @param firstRealAddend    First real number
+     * @param secondRealAddend    Second real number
      * @return      Integer sum
      */
-    public static int getNearestIntegerToRealSum013(double p1, double p2 ) {
+    public static int getNearestIntegerToRealSum013(double firstRealAddend, double secondRealAddend ) {
         // TODO: Write code here
         return 0;
+    }
+
+    /**
+     * Exercise 014 - Is it a number
+     * Given a string s, write a method (function) that will return true if its a valid single integer or floating
+     * point number or false if its not.
+     *
+     * LEVEL: EASY
+     *
+     * Valid examples, should return true:
+     * isDigit("3")
+     * isDigit("  3  ")
+     * isDigit("-3.23")
+     *
+     * should return false:
+     * isDigit("3-4")
+     * isDigit("  3   5")
+     * isDigit("3 5")
+     * isDigit("zero")
+     *
+     * @param stringToTest
+     * @return              True if number, false if not.
+     */
+    public static boolean isNumber014(String stringToTest) {
+        return false;
     }
 
     /**

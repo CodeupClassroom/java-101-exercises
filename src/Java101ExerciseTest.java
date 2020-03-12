@@ -133,6 +133,55 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise014Test() {
+        // int test
+        assertEquals("Java101Exercises.isNumber014(\"3\") Failed", true,
+                Java101Exercises.isNumber014("3"));
+        assertEquals("Java101Exercises.isNumber014(\"   +3   \") Failed", true,
+                Java101Exercises.isNumber014("   +3   "));
+        assertEquals("Java101Exercises.isNumber014(\" -3\") Failed", true,
+                Java101Exercises.isNumber014(" -3"));
+        assertEquals("Java101Exercises.isNumber014(\"0\") Failed", true,
+                Java101Exercises.isNumber014("0"));
+
+        // real test
+        assertEquals("Java101Exercises.isNumber014(\"3.14159\") Failed", true,
+                Java101Exercises.isNumber014("3.14159"));
+        assertEquals("Java101Exercises.isNumber014(\"   -3.14159 \") Failed", true,
+                Java101Exercises.isNumber014("  -3.14159 "));
+        assertEquals("Java101Exercises.isNumber014(\" +3.14159  \") Failed", true,
+                Java101Exercises.isNumber014(" +3.14159  "));
+        assertEquals("Java101Exercises.isNumber014(\"0.0\") Failed", true,
+                Java101Exercises.isNumber014("0.0"));
+
+        // random test
+        for (int i = 1; i < 10; i++) {
+            double x = (Math.random() * 201) - 100;
+            long l = (long) x;
+            String ds = Double.toString(x);
+            String ls = Long.toString(l);
+            assertEquals("Java101Exercises.isNumber014(\"" + ds + "\") Failed", true,
+                    Java101Exercises.isNumber014(ds));
+            assertEquals("Java101Exercises.isNumber014(\"" + ls + "\") Failed", true,
+                    Java101Exercises.isNumber014(ls));
+        }
+
+        // non-numeric test
+        assertEquals("Java101Exercises.isNumber014(\"is not a number\") Failed", false,
+                Java101Exercises.isNumber014("is not a number"));
+        assertEquals("Java101Exercises.isNumber014(\"3 .14159\") Failed", false,
+                Java101Exercises.isNumber014("3 .14159"));
+        assertEquals("Java101Exercises.isNumber014(\"+ 3.14159\") Failed", false,
+                Java101Exercises.isNumber014("+ 3.14159"));
+        assertEquals("Java101Exercises.isNumber014(\"3.141.59\") Failed", false,
+                Java101Exercises.isNumber014("3.141.59"));
+        assertEquals("Java101Exercises.isNumber014(\"\") Failed", false,
+                Java101Exercises.isNumber014(""));
+        assertEquals("Java101Exercises.isNumber014(\"zero\") Failed", false,
+                Java101Exercises.isNumber014("zero"));
+    }
+
+    @Test
     public void exercise041Test() {
         ArrayList<Integer> input = new ArrayList();
         input.add(1);
