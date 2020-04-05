@@ -16,6 +16,46 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise002Test() {
+        assertEquals("Java101Exercises.sayHello002(\"James\") failed", "Hello James!", Java101Exercises.sayHello002("James"));
+        assertEquals("Java101Exercises.sayHello002(\"Miguel\") failed", "Hello Miguel!", Java101Exercises.sayHello002("Miguel"));
+        assertEquals("Java101Exercises.sayHello002(\"\") failed", "Hello !", Java101Exercises.sayHello002(""));
+        assertEquals("Java101Exercises.sayHello002(null) failed", "Hello null!", Java101Exercises.sayHello002(null));
+    }
+
+    @Test
+    public void exercise003Test() {
+        String[] codeup = Java101Exercises.sayCodeup003();
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 01",
+                "* * * * *                 * *             * * * * * * *          * * * * * * * *     *                 *      * * * * * *",
+                codeup[0].trim());
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 02",
+                "*           *            *       *          *             *        *                   *                 *      *           *",
+                codeup[1].trim());
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 03",
+                "*               *       *             *       *              *       *                   *                 *      *            *",
+                codeup[2].trim());
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 04",
+                "*                        *               *      *               *      *                   *                 *      *           *",
+                codeup[3].trim());
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 05",
+                "*                        *               *      *               *      * * * * * * *       *                 *      * * * * * *",
+                codeup[4].trim());
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 06",
+                "*                        *               *      *               *      *                   *                 *      *",
+                codeup[5].trim());
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 07",
+                "*               *       *             *       *              *       *                    *               *       *",
+                codeup[6].trim());
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 08",
+                "*           *            *       *          *             *        *                       *         *          *",
+                codeup[7].trim());
+        assertEquals("Java101Exercises.sayCodeup003() failed on test 09",
+                "* * * * *                 * *             * * * * * * *          * * * * * * * *            * * *             *",
+                codeup[8].trim());
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);
