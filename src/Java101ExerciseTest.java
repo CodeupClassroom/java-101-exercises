@@ -163,22 +163,46 @@ public class Java101ExerciseTest {
     @Test
     public void exercise015Test() {
         int[] nums = {7, 15, 3, 6, 8};
-        assertEquals("exercise002Test failed test 01.", true, Java101Exercises.findTwoAddends015(nums, 13));
-        assertEquals("exercise002Test failed test 02.", false, Java101Exercises.findTwoAddends015(nums, 25));
+        assertEquals("findTwoAddends015 failed test 01.", true, Java101Exercises.findTwoAddends015(nums, 13));
+        assertEquals("findTwoAddends015 failed test 02.", false, Java101Exercises.findTwoAddends015(nums, 25));
 
         nums = new int[]{-3, 14, -7, 5, 19};
-        assertEquals("exercise002Test failed test 03.", true, Java101Exercises.findTwoAddends015(nums, -2));
-        assertEquals("exercise002Test failed test 04.", false, Java101Exercises.findTwoAddends015(nums, 13));
+        assertEquals("findTwoAddends015 failed test 03.", true, Java101Exercises.findTwoAddends015(nums, -2));
+        assertEquals("findTwoAddends015 failed test 04.", false, Java101Exercises.findTwoAddends015(nums, 13));
 
         nums = new int[]{2, 4, 6, 8, -10};
-        assertEquals("exercise002Test failed test 05.", true, Java101Exercises.findTwoAddends015(nums, 10));
-        assertEquals("exercise002Test failed test 06.", false, Java101Exercises.findTwoAddends015(nums, 11));
+        assertEquals("findTwoAddends015 failed test 05.", true, Java101Exercises.findTwoAddends015(nums, 10));
+        assertEquals("findTwoAddends015 failed test 06.", false, Java101Exercises.findTwoAddends015(nums, 11));
 
         nums = null;
-        assertEquals("exercise002Test failed test 07.", false, Java101Exercises.findTwoAddends015(nums, 25));
+        assertEquals("findTwoAddends015 failed test 07.", false, Java101Exercises.findTwoAddends015(nums, 25));
 
         nums = new int[1];
-        assertEquals("exercise002Test failed test 08.", false, Java101Exercises.findTwoAddends015(nums, 25));
+        assertEquals("findTwoAddends015 failed test 08.", false, Java101Exercises.findTwoAddends015(nums, 25));
+    }
+
+    @Test
+    public void exercise016Test() {
+        int[] nums = {7, 15, 3, 6, 8};
+        assertEquals("countInversionsInArray016 failed test 01.", 5, Java101Exercises.countInversionsInArray016(nums));
+
+        nums = new int[]{-3, 14, -7, 5, 19};
+        assertEquals("countInversionsInArray016 failed test 02.", 3, Java101Exercises.countInversionsInArray016(nums));
+
+        nums = new int[]{2, 4, 6, 8, -10};
+        assertEquals("countInversionsInArray016 failed test 03.", 4, Java101Exercises.countInversionsInArray016(nums));
+
+        nums = new int[]{2, 4, 6, 8, 10};
+        assertEquals("countInversionsInArray016 failed test 04.", 0, Java101Exercises.countInversionsInArray016(nums));
+
+        nums = new int[]{10, 8, 6, 4, 2};
+        assertEquals("countInversionsInArray016 failed test 05.", 10, Java101Exercises.countInversionsInArray016(nums));
+
+        nums = null;
+        assertEquals("countInversionsInArray016 failed test 06.", 0, Java101Exercises.countInversionsInArray016(nums));
+
+        nums = new int[1];
+        assertEquals("countInversionsInArray016 failed test 07.", 0, Java101Exercises.countInversionsInArray016(nums));
     }
 
     @Test
