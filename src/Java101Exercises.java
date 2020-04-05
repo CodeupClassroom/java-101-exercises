@@ -32,22 +32,6 @@ public class Java101Exercises {
     }
 
     /**
-     * Exercise 002 - Find Two Addends
-     * Given a primitive array of integers a number n, return whether any two numbers from the array add up to equal n.
-     * For example, given [7, 15, 3, 6, 8] and n equal to 13, return true since 7 + 6 is 13.
-     *
-     * LEVEL: BASIC
-     *
-     * @param nums
-     * @param n
-     * @return
-     */
-    public static boolean findTwoAddends002(int[] nums, int n) {
-        // TODO: Write code here
-        return false;
-    }
-
-    /**
      * Exercise 011 - Preform Indicate Operation
      * Write a method with 3 parameters; a String and 2 doubles. The string will be an operation that the operation
      * needs to process on the two operands. Return the result if the operation. Return 0.0 if the operation is not
@@ -121,13 +105,56 @@ public class Java101Exercises {
     }
 
     /**
+     * Exercise 015 - Find Two Addends
+     * Given a primitive array of integers and a number n, return whether any two numbers from the array add up to
+     * equal n.
+     *
+     * For example, given [7, 15, 3, 6, 8] and n equal to 13, return true since 7 + 6 is 13.
+     *
+     * LEVEL: EASY
+     *
+     * @param nums
+     * @param n
+     * @return
+     */
+    public static boolean findTwoAddends015(int[] nums, int n) {
+        // TODO: Write code here
+        return false;
+    }
+
+    /**
+     * Exercise 016 - Count Inversions
+     * This problem was asked by Google.
+     *
+     * We can determine how "out of order" an array A is by counting the number of inversions it has. Two elements
+     * A[i] and A[j] form an inversion if A[i] > A[j] but i < j. That is, a smaller element appears after a larger
+     * element.
+     *
+     * Given an array, count the number of inversions it has. Do this faster than O(N^2) time.
+     *
+     * You may assume each element in the array is distinct.
+     *
+     * For example, a sorted list has zero inversions. The array [2, 4, 1, 3, 5] has three inversions: (2, 1), (4, 1),
+     * and (4, 3). The array [5, 4, 3, 2, 1] has ten inversions: every distinct pair forms an inversion.
+     *
+     * LEVEL: EASY
+     *
+     * @param nums  An array of integers
+     * @return  The number of inversions in the array.
+     */
+    public static int countInversionsInArray016(int[] nums) {
+        // TODO: Write code here
+        return 0;
+    }
+
+    /**
      * Exercise 041 - Multiply Elements of a List
      * Given an array of integers, return a new array such that each element at index i of the new array is the product
      * of all the numbers in the original array except the one at i.
      *
      * For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input
      * was [3, 2, 1], the expected output would be [2, 3, 6].
-     *S
+     *
      * LEVEL:   INTERMEDIATE
      *
      * @param iList         An array of integers
