@@ -80,6 +80,16 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise007Test() {
+        assertTrue("Java101Exercises.isGreaterThan007(9.3, 7.4) failed",
+                Java101Exercises.isGreaterThan007(9.3, 7.4));
+        assertFalse("Java101Exercises.isGreaterThan007(3.14, 3.14) failed",
+                Java101Exercises.isGreaterThan007(3.14, 3.14));
+        assertFalse("Java101Exercises.isGreaterThan007(3.14, 9.14) failed",
+                Java101Exercises.isGreaterThan007(3.14, 9.14));
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);
