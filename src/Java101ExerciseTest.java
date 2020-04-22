@@ -110,6 +110,16 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise010Test() {
+        assertEquals("Java101Exercises.calcRemainder010(10, 4) failed", 2,
+                Java101Exercises.calcRemainder010(10, 4));
+        assertEquals("Java101Exercises.calcRemainder010(64, -8) failed", 0,
+                Java101Exercises.calcRemainder010(64, -8));
+        assertEquals("Java101Exercises.calcRemainder010(-5, -28) failed", 5,
+                Java101Exercises.calcRemainder010(5, 28));
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);
