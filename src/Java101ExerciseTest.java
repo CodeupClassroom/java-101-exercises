@@ -56,6 +56,70 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise004Test() {
+        assertEquals("Java101Exercises.addDouble004(3.5, 4.7) failed",
+                8.2, Java101Exercises.addDouble004(3.5, 4.7), 0.000001);
+        assertEquals("Java101Exercises.addDouble004(-8.2, 3.7) failed",
+                -4.6, Java101Exercises.addDouble004(-8.3, 3.7), 0.000001);
+    }
+
+    @Test
+    public void exercise005Test() {
+        assertTrue("Java101Exercises.concatenateStrings005(\"Marilyn\", \"Monre\") failed",
+                "Marilyn Monre".equals(Java101Exercises.concatenateStrings005("Marilyn", "Monre")));
+        assertTrue("Java101Exercises.concatenateStrings005(\"Henry\", \"Ford\") failed",
+                "Henry Ford".equals(Java101Exercises.concatenateStrings005("Henry", "Ford")));
+    }
+
+    @Test
+    public void exercise006Test() {
+        assertFalse("Java101Exercises.isEqual006(9, 7) failed",
+                Java101Exercises.isEqual006(9, 7));
+        assertTrue("Java101Exercises.isEqual006(7, 7) failed",
+                Java101Exercises.isEqual006(7, 7));
+    }
+
+    @Test
+    public void exercise007Test() {
+        assertTrue("Java101Exercises.isGreaterThan007(9.3, 7.4) failed",
+                Java101Exercises.isGreaterThan007(9.3, 7.4));
+        assertFalse("Java101Exercises.isGreaterThan007(3.14, 3.14) failed",
+                Java101Exercises.isGreaterThan007(3.14, 3.14));
+        assertFalse("Java101Exercises.isGreaterThan007(3.14, 9.14) failed",
+                Java101Exercises.isGreaterThan007(3.14, 9.14));
+    }
+
+    @Test
+    public void exercise008Test() {
+        assertEquals("Java101Exercises.cube008(9.3) failed", 64.0,
+                Java101Exercises.cube008(4), 0.000001);
+        assertEquals("Java101Exercises.cube008(2) failed", 8.0,
+                Java101Exercises.cube008(2), 0.000001);
+        assertEquals("Java101Exercises.cube008(-5) failed", -125.0,
+                Java101Exercises.cube008(-5), 0.000001);
+    }
+
+    @Test
+    public void exercise009Test() {
+        assertEquals("Java101Exercises.calcPositiveDifference009(4, 10) failed", 6,
+                Java101Exercises.calcPositiveDifference009(4, 10));
+        assertEquals("Java101Exercises.calcPositiveDifference009(-2, 17) failed", 19,
+                Java101Exercises.calcPositiveDifference009(-2, 17));
+        assertEquals("Java101Exercises.calcPositiveDifference009(-5, -28) failed", 23,
+                Java101Exercises.calcPositiveDifference009(-5, -28));
+    }
+
+    @Test
+    public void exercise010Test() {
+        assertEquals("Java101Exercises.calcRemainder010(10, 4) failed", 2,
+                Java101Exercises.calcRemainder010(10, 4));
+        assertEquals("Java101Exercises.calcRemainder010(64, -8) failed", 0,
+                Java101Exercises.calcRemainder010(64, -8));
+        assertEquals("Java101Exercises.calcRemainder010(-5, -28) failed", 5,
+                Java101Exercises.calcRemainder010(5, 28));
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);

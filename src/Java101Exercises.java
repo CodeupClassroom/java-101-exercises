@@ -74,6 +74,110 @@ public class Java101Exercises {
     }
 
     /**
+     * Exercise 004 - Add doubles
+     * Write a method to add to real numbers (double) and return the sum as a double.
+     *
+     * LEVEL: BASIC
+     *
+     * @param a     First number to add
+     * @param b     Second number to add
+     * @return      The sum
+     */
+    public static double addDouble004(double a, double b) {
+        // TODO: Write code here
+        return 0.0;
+    }
+
+    /**
+     * Exercise 005 - Concatenate strings
+     * Write a method to join to Strings together with a space between the two Strings.
+     *
+     * LEVEL: BASIC
+     *
+     * @param a     First String
+     * @param b     Second String
+     * @return      The joined strings
+     */
+    public static String concatenateStrings005(String a, String b) {
+        // TODO: Write code here
+        return null;
+    }
+
+    /**
+     * Exercise 006 - is Equal
+     * Write a method that accepts two integers and returns the boolean value true if they are equal and returns the
+     * boolean value false if the are not equal.
+     *
+     * LEVEL: BASIC
+     *
+     * @param a     First integer
+     * @param b     Second integer
+     * @return      Boolean flag reflecting equality
+     */
+    public static boolean isEqual006(int a, int b) {
+        // TODO: Write code here
+        return false;
+    }
+
+    /**
+     * Exercise 007 - is Greater Than
+     * Write a method that accepts two doubles and returns the boolean value true if a is greater than b and returns
+     * the boolean value false if a is not greater than b.
+     *
+     * LEVEL: BASIC
+     *
+     * @param a     First double
+     * @param b     Second double
+     * @return      Boolean flag reflecting the relationship
+     */
+    public static boolean isGreaterThan007(double a, double b) {
+        // TODO: Write code here
+        return false;
+    }
+
+    /**
+     * Exercise 008 - Cubed
+     * Write a method that accepts a double and returns the number cubed ( times itself three times).
+     * LEVEL: BASIC
+     *
+     * @param a     The number
+     * @return      The cubed value of the number.
+     */
+    public static double cube008(double a) {
+        return 0.0;
+    }
+
+    /**
+     * Exercise 009 - Positive Difference
+     * Write a method that accepts two integers and returns the positive difference between the two numbers.
+     *
+     * LEVEL: BASIC
+     *
+     * @param a     First integer
+     * @param b     Second integer
+     * @return      The positive difference between the two numbers
+     */
+    public static int calcPositiveDifference009(int a, int b) {
+        // TODO: Write code here
+        return 0;
+    }
+
+    /**
+     * Exercise 010 - Remainder
+     * Write a method that accepts two integers and returns the remainder from the division .
+     *
+     * LEVEL: BASIC
+     *
+     * @param a     Number to be divided
+     * @param b     Number to divide by
+     * @return      remainder from the division
+     */
+    public static int calcRemainder010(int a, int b) {
+        // TODO: Write code here
+        return 0;
+    }
+
+    /**
      * Exercise 011 - Preform Indicate Operation
      * Write a method with 3 parameters; a String and 2 doubles. The string will be an operation that the operation
      * needs to process on the two operands. Return the result if the operation. Return 0.0 if the operation is not
