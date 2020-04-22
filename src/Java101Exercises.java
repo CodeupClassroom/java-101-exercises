@@ -74,6 +74,21 @@ public class Java101Exercises {
     }
 
     /**
+     * Exercise 004 - Add doubles
+     * Write a method to add to real numbers (double) and return the sum as a double.
+     *
+     * LEVEL: BASIC
+     *
+     * @param a     First number to add
+     * @param b     Second number to add
+     * @return      The sum
+     */
+    public static double addDouble004(double a, double b) {
+        // TODO: Write code here
+        return 0.0;
+    }
+
+    /**
      * Exercise 011 - Preform Indicate Operation
      * Write a method with 3 parameters; a String and 2 doubles. The string will be an operation that the operation
      * needs to process on the two operands. Return the result if the operation. Return 0.0 if the operation is not

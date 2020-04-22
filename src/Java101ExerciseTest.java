@@ -56,6 +56,14 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise004Test() {
+        assertEquals("Java101Exercises.addDouble004(3.5, 4.7) failed",
+                8.2, Java101Exercises.addDouble004(3.5, 4.7), 0.000001);
+        assertEquals("Java101Exercises.addDouble004(-8.2, 3.7) failed",
+                -4.6, Java101Exercises.addDouble004(-8.3, 3.7), 0.000001);
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);
