@@ -136,6 +136,18 @@ public class Java101Exercises {
     }
 
     /**
+     * Exercise 008 - Cubed
+     * Write a method that accepts a double and returns the number cubed ( times itself three times).
+     * LEVEL: BASIC
+     *
+     * @param a     The number
+     * @return      Boolean flag reflecting equality
+     */
+    public static double cube008(double a) {
+        return 0.0;
+    }
+
+    /**
      * Exercise 011 - Preform Indicate Operation
      * Write a method with 3 parameters; a String and 2 doubles. The string will be an operation that the operation
      * needs to process on the two operands. Return the result if the operation. Return 0.0 if the operation is not

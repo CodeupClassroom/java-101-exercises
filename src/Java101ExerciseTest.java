@@ -90,6 +90,16 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise008Test() {
+        assertEquals("Java101Exercises.cube008(9.3) failed", 64.0,
+                Java101Exercises.cube008(4), 0.000001);
+        assertEquals("Java101Exercises.cube008(2) failed", 8.0,
+                Java101Exercises.cube008(2), 0.000001);
+        assertEquals("Java101Exercises.cube008(-5) failed", -125.0,
+                Java101Exercises.cube008(-5), 0.000001);
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);
