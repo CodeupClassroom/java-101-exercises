@@ -72,6 +72,14 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise006Test() {
+        assertFalse("Java101Exercises.isEqual006(9, 7) failed",
+                Java101Exercises.isEqual006(9, 7));
+        assertTrue("Java101Exercises.isEqual006(7, 7) failed",
+                Java101Exercises.isEqual006(7, 7));
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);
