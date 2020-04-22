@@ -100,6 +100,16 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise009Test() {
+        assertEquals("Java101Exercises.calcPositiveDifference009(4, 10) failed", 6,
+                Java101Exercises.calcPositiveDifference009(4, 10));
+        assertEquals("Java101Exercises.calcPositiveDifference009(-2, 17) failed", 19,
+                Java101Exercises.calcPositiveDifference009(-2, 17));
+        assertEquals("Java101Exercises.calcPositiveDifference009(-5, -28) failed", 23,
+                Java101Exercises.calcPositiveDifference009(-5, -28));
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);
