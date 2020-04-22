@@ -64,6 +64,14 @@ public class Java101ExerciseTest {
     }
 
     @Test
+    public void exercise005Test() {
+        assertTrue("Java101Exercises.concatenateStrings005(\"Marilyn\", \"Monre\") failed",
+                "Marilyn Monre".equals(Java101Exercises.concatenateStrings005("Marilyn", "Monre")));
+        assertTrue("Java101Exercises.concatenateStrings005(\"Henry\", \"Ford\") failed",
+                "Henry Ford".equals(Java101Exercises.concatenateStrings005("Henry", "Ford")));
+    }
+
+    @Test
     public void exercise011Test() {
         assertEquals("exercise011Test failed test 01.",7.0, Java101Exercises.preformIndicatedOperation011("ADD",3, 4), 0.00001);
         assertEquals("exercise011Test failed test 02.",-1.0, Java101Exercises.preformIndicatedOperation011("SUB",3, 4), 0.00001);

@@ -89,6 +89,21 @@ public class Java101Exercises {
     }
 
     /**
+     * Exercise 005 - Concatenate strings
+     * Write a method to join to Strings together with a space between the two Strings.
+     *
+     * LEVEL: BASIC
+     *
+     * @param a     First String
+     * @param b     Second String
+     * @return      The sum
+     */
+    public static String concatenateStrings005(String a, String b) {
+        // TODO: Write code here
+        return null;
+    }
+
+    /**
      * Exercise 011 - Preform Indicate Operation
      * Write a method with 3 parameters; a String and 2 doubles. The string will be an operation that the operation
      * needs to process on the two operands. Return the result if the operation. Return 0.0 if the operation is not
